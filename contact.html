@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Unihelp | Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .mail-box {
+            text-align: center; padding: 50px 20px;
+        }
+        .mail-link {
+            font-size: 1.5rem; color: var(--accent-brown); text-decoration: none;
+            font-weight: bold; display: inline-block; margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.05); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+    </style>
+</head>
+<body>
+    <div class="glass-container">
+        <header class="header"><a href="index.html" class="logo">Uni<span>help</span></a></header>
+        <nav class="main-nav">
+            <a href="index.html">ACCUEIL</a>
+            <a href="cours.html">COURS</a>
+            <a href="td.html">TD</a>
+            <a href="examens.html">EXAMENS</a>
+        </nav>
+
+        <main class="mail-box">
+            <h2 style="color: white;">Une question ? Un document à partager ?</h2>
+            <p>L'équipe Unihelp est à votre écoute pour améliorer la plateforme.</p>
+            <p style="margin-top: 30px; opacity: 0.6;">Écrivez-nous directement à :</p>
+            <a href="mailto:contact@unihelp.fr" class="mail-link">contact@unihelp.fr</a>
+            <p style="margin-top: 40px; font-style: italic; font-size: 0.9rem;">"Par des étudiants, pour des étudiants."</p>
+        </main>
+    </div>
+</body>
+</html>

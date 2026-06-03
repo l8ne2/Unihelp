@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unihelp | Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="glass-container">
+        <header class="header">
+            <a href="index.html" class="logo">Uni<span>help</span></a>
+            <nav class="top-nav">
+                <a href="contact.html" style="color: var(--light-blue); text-decoration: none; font-size: 0.9rem;">Contact / Aide</a>
+            </nav>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html" class="active">ACCUEIL</a>
+            <a href="cours.html">COURS</a>
+            <a href="td.html">TD</a>
+            <a href="examens.html">EXAMENS</a>
+        </nav>
+
+        <main style="text-align: center; padding-top: 20px;">
+            <h1 style="color: white; font-size: 2.2rem; margin-bottom: 10px;">Bibliothèque Étudiante</h1>
+            <p style="color: var(--light-blue); opacity: 0.8; margin-bottom: 40px;">
+                Trouvez vos ressources par Licence et par Semestre en un clic.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+                
+                <div class="glass-card">
+                    <h3 style="color: white; margin-top: 0;">📚 COURS</h3>
+                    <div class="home-card-content">
+                        <p>Supports de cours magistraux, fiches de révision et polycopiés.</p>
+                        <a href="cours.html" class="btn-subject" style="display: inline-block; margin-top: 10px;">Accéder →</a>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h3 style="color: white; margin-top: 0;">📝 TRAVAUX DIRIGÉS</h3>
+                    <div class="home-card-content">
+                        <p>Séries d'exercices, applications numériques et fiches de TD.</p>
+                        <a href="td.html" class="btn-subject" style="display: inline-block; margin-top: 10px;">S'exercer →</a>
+                    </div>
+                </div>
+
+                <div class="glass-card">
+                    <h3 style="color: white; margin-top: 0;">🎓 EXAMENS</h3>
+                    <div class="home-card-content">
+                        <p>Annales des années précédentes avec sujets et corrigés détaillés.</p>
+                        <a href="examens.html" class="btn-subject" style="display: inline-block; margin-top: 10px;">Réviser →</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer style="margin-top: 50px; text-align: center; font-size: 0.8rem; opacity: 0.5;">
+            <p>&copy; 2026 Unihelp - Plateforme de partage académique</p>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Unihelp | Examens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="glass-container">
+        <header class="header">
+            <a href="index.html" class="logo">Uni<span>help</span></a>
+            <nav class="top-nav"><a href="contact.html" style="color:var(--light-blue); text-decoration:none; font-size:0.9rem;">Contact</a></nav>
+        </header>
+
+        <nav class="main-nav">
+            <a href="index.html">ACCUEIL</a>
+            <a href="cours.html">COURS</a>
+            <a href="td.html">TD</a>
+            <a href="examens.html" class="active">EXAMENS</a>
+        </nav>
+
+        <main>
+            <div class="search-bar"><input type="text" id="examSearch" placeholder="Rechercher une épreuve..."></div>
+
+            <div class="filter-container">
+                <select class="filter-select" id="licenceFilter">
+                    <option value="">Niveau (L1, L2, L3)</option>
+                    <option value="L1">Licence 1</option>
+                    <option value="L2">Licence 2</option>
+                    <option value="L3">Licence 3</option>
+                </select>
+                <select class="filter-select" id="semestreFilter">
+                    <option value="">Semestre</option>
+                    <option value="S1">Semestre 1</option>
+                    <option value="S2">Semestre 2</option>
+                </select>
+                <select class="filter-select" id="matiereFilter">
+                    <option value="">Matière</option>
+                    <option value="Maths">Mathématiques</option>
+                    <option value="Physique">Physique</option>
+                    <option value="Meca">Mécanique</option>
+                </select>
+            </div>
+
+            <div class="glass-card">
+                <table class="data-table" id="examTable">
+                    <thead>
+                        <tr>
+                            <th>Matière</th>
+                            <th>Année / Niveau</th>
+                            <th>Documents</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-licence="L1" data-semestre="S1" data-matiere="Maths">
+                            <td>Algèbre Linéaire</td>
+                            <td>2025 - L1 (S1)</td>
+                            <td>
+                                <a href="pdf/sujet_math_2025.pdf" target="_blank" class="btn-subject">Sujet</a>
+                                <a href="pdf/corr_math_2025.pdf" target="_blank" class="btn-answer">Corrigé</a>
+                            </td>
+                        </tr>
+                        <tr data-licence="L2" data-semestre="S2" data-matiere="Meca">
+                            <td>Mécanique des Fluides</td>
+                            <td>2024 - L2 (S2)</td>
+                            <td>
+                                <a href="pdf/sujet_meca_2024.pdf" target="_blank" class="btn-subject">Sujet</a>
+                                <a href="pdf/corr_meca_2024.pdf" target="_blank" class="btn-answer">Corrigé</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
