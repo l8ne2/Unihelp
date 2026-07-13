@@ -36,3 +36,5 @@ with open(fichier_sortie, 'w', encoding='utf-8') as f:
     f.write('  </tbody>\n</table>')
 
 print(f"Terminé ! Le tableau affiche maintenant {dossiers} correctement.")
+
+# Configuration terminée
